@@ -1,0 +1,30 @@
+{
+	"name": "mastra-voice-speaker-issue",
+	"version": "1.0.0",
+	"private": true,
+	"description": "Minimal reproduction for [mastra-ai/mastra#26182](https://github.com/mastra-ai/mastra/issues/26182). The bug occurs at runtime when the Client SDK's `agent.voice.speak()` sends a speaker override to the Mastra server.",
+	"homepage": "https://github.com/cofymdd/mastra-voice-speaker-issue#readme",
+	"bugs": {
+		"url": "https://github.com/cofymdd/mastra-voice-speaker-issue/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/cofymdd/mastra-voice-speaker-issue.git"
+	},
+	"license": "ISC",
+	"author": "",
+	"type": "module",
+	"main": "index.js",
+	"scripts": {
+		"start": "node reproduce.mjs"
+	},
+	"dependencies": {
+		"@mastra/client-js": "1.50.0",
+		"@mastra/core": "1.74.0",
+		"@mastra/deployer": "1.74.0",
+		"@mastra/server": "1.74.0"
+	},
+	"engines": {
+		"node": ">=22.13.0"
+	}
+}
